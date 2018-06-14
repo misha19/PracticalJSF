@@ -54,8 +54,8 @@ public class SearchFacadeBean {
         return em.createNamedQuery("Course.findByYear", Course.class).setParameter("year", year).getResultList();
     }
 
-     public List<Course> getCourseFindBycountry(String country) {
-        return em.createNamedQuery("Course.findbyCountry", Course.class).setParameter("country", country).getResultList();
+     public List<Course> getCourseFindBySubject(String name) {
+        return em.createNamedQuery("Course.findbySubject", Course.class).setParameter("subject", subject).getResultList();
 
 
      }
