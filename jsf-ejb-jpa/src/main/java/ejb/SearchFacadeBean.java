@@ -1,3 +1,4 @@
+/*
 package ejb;
 
 import javax.ejb.Stateless;
@@ -42,20 +43,22 @@ public class SearchFacadeBean {
         em.remove(Course);
     }
 
-    /**
+    */
+/**
      * select object from Course
-     */
+     *//*
+
 
     public List<Course> getCourseFindAll() {
         return em.createNamedQuery("Course.findAll" , Course.class).getResultList();
     }
 
-    public List<Course> getCourseFindByYear(Integer year){
-        return em.createNamedQuery("Course.findByYear", Course.class).setParameter("year", year).getResultList();
+    public List<Course> getCourseFindByCourseId(Integer courseId){
+        return em.createNamedQuery("Course.findByCourseId", Course.class).setParameter("courseId", courseId).getResultList();
     }
 
-     public List<Course> getCourseFindBySubject(String name) {
-        return em.createNamedQuery("Course.findbySubject", Course.class).setParameter("subject", subject).getResultList();
+     public List<Course> getCourseFindByCourseNamet(String courseName) {
+        return em.createNamedQuery("Course.findbyCourseName", Course.class).setParameter("courseName", courseName).getResultList();
 
 
      }
@@ -64,3 +67,4 @@ public class SearchFacadeBean {
 
 
 }
+*/

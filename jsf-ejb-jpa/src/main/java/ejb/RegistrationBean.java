@@ -1,3 +1,4 @@
+/*
 package ejb;
 
 import jpa.Teacher;
@@ -93,9 +94,11 @@ public class RegistrationBean implements RegistrationLocal{
         course= em.find(Course.class, course.getId());
         em.remove(course);
     }
-    /**
+    */
+/**
      * select object from Course
-     */
+     *//*
+
 
     public List<Course> getCourseFindAll(){
         return em.createNamedQuery("Course.findAll", Course.class).getResultList();
@@ -105,10 +108,11 @@ public class RegistrationBean implements RegistrationLocal{
         return em.createNamedQuery("Course.findByYear", Course.class).setParameter("year",year).getResultList();
     }
 
-    public List<Course> getCourseFindBySubject(String subject){
-        return em.createNamedQuery("Course.findBySubject",Course.class).setParameter("subject", subject).getResultList();
+    public List<Course> getCourseFindByCourseName(String courseName){
+        return em.createNamedQuery("Course.findByCourseName",Course.class).setParameter("courseName", courseName).getResultList();
 
     }
 
 
 }
+*/

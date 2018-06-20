@@ -14,7 +14,8 @@ public class Login {
     String email;
     Teacher teacher;
     Student student;
-    Admin  admin;
+    RegistrationLocal registration;
+
 
     public String getEmail() {
         return email;
@@ -29,7 +30,14 @@ public class Login {
         teacher= (Teacher) Teacher.findTeacher(email);
 
         if(teacher !=null) {
-            navigation = ""
+            navigation = "coursehome";
         }
+        else {
+            navigation = "register";
+        }
+        return navigation;
+    }
+    public void setTeacher(Teacher teacher){
+        this.teacher=teacher;
     }
 }
