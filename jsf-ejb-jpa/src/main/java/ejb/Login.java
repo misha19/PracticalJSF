@@ -1,3 +1,4 @@
+/*
 package ejb;
 
 import jpa.Person;
@@ -41,3 +42,4 @@ public class Login {
         this.teacher=teacher;
     }
 }
+*/
