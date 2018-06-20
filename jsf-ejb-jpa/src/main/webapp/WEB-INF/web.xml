@@ -26,10 +26,7 @@
     <welcome-file>persons.xhtml</welcome-file>
   </welcome-file-list>
 
-  <login-config>
-    <auth-method>BASIC</auth-method>
-    <realm-name>file</realm-name>
-  </login-config>
+
 
   <login-config>
     <auth-method>FORM</auth-method>
@@ -37,7 +34,7 @@
     <form-login-config>
       <form-login-page>/login01.xhtml</form-login-page>
       <form-error-page>/loginError.xhtml</form-error-page>
-      <form-error-page></form-error-page>
+
     </form-login-config>
   </login-config>
 
